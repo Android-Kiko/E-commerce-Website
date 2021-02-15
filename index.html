@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <title>GlowStation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("images/bck.jpg");
+    background-attachment: relative;
+    background-size: cover;
+}
+.navigation-container{
+    /*width: style="width: 300px;height: 300px";*/
+    height: 80px;
+    display: block;
+    background-color:black;
+}
+.inner_header{
+    width: 1000px;
+    /*height: style="width: 300px;height: 300px";*/
+    display: block;
+    margin: 0 auto;
+    background-color:black;
+}
+.logo_container{
+    /*height: style="width: 300px;height: 300px";*/
+    display: table;
+    float: left;
+    margin-top: 10px;
+}
+.glow{
+    font-size: 80px;
+    color: #fff;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow{
+from {text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0 70px white;}
+to{text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0 70px white, 0 0 80px white;}
+}
+.logo_container h1{
+    color: white;
+    height: style="width: 300px;height: 300px";
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Century Gothic';
+    font-size: 40px;
+    font-weight: 100;
+}
+.logo_container h1 span{
+    font-size: 40px;
+    font-weight: 800;
+}
+.navigation{
+    float: right;
+    height: style="width: 300px;height: 300px";
+}
+.navigation li{
+    margin-top: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    height: style="width: 300px;height: 300px";
+    color: white;
+    float: left;
+    padding: 0px 20px;
+    font-family: 'Century Gothic';
+    font-size: 16px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.active {
+  background-color: #000;;
+  color: white;
+}
+.button {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(48, 3, 131);
+    color: white;
+    font-size: 16px;
+    padding: 12px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: -29%;
+}
+.button1:hover {
+  background-color: rgb(17, 178, 231);
+  color: rgb(241, 221, 221);
+}
+.topnav{display: none;}
+.navigation_footer_mobile{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+  
+  .column {
+    width: 100%;
+    margin-bottom: 200px;
+  }
+
+  /*Mobile view navigation*/
+  .navigation-container{
+    display: none;
+  }
+  .topnav{
+    display: block;
+  }
+  .navigation_footer_mobile{
+    display: block;
+  }
+
+}
+</style>
+<body>
+
+<!--Mobile View-->
+<!-- Top Navigation Menu -->
+<div class="topnav">
+    <a href="#home">Glow Station</a>
+    <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">🛒 Cart</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="mobileview()">
+        =
+    </a>
+</div>
+
+<div class="navigation-container">
+    <div class="inner_header">
+        <div class="logo_container">
+            <h1 class = "glow">G͙l͙o͙w͙<span>S͙t͙a͙t͙i͙o͙n͙</span></h1>
+        </div>
+            <ul class="navigation">
+                <li><a href="index.html", style="color: white;">Home</a></li>
+                <li><a href="products.html", style="color: white;">Products</a></li>
+                <li><a href="about.html", style="color: white;">About</a></li>
+                <li><a href="contact.html", style="color: white;">Contact</a></li>
+                <li><a href="cart.html", style="color: white;">🛒</a></li>
+            </ul>
+    </div>
+</div>
+<a href="products.html">
+    <button class="button button1">Shop Now</button>
+</a>
+<script>
+    function mobileview() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+    </body>
+    </html>

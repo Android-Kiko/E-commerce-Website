@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <title>Products</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("images/BlackMarble.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navigation-container{
+    /*width: style="width: 300px;height: 300px";*/
+    height: 80px;
+    display: block;
+    background-color:black;
+}
+.inner_header{
+    width: 1000px;
+    /*height: style="width: 300px;height: 300px";*/
+    display: block;
+    margin: 0 auto;
+    background-color:black;
+}
+.logo_container{
+    /*height: style="width: 300px;height: 300px";*/
+    display: table;
+    float: left;
+    margin-top: 10px;
+}
+.glow{
+    font-size: 80px;
+    color: #fff;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow{
+from {text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0 70px white;}
+to{text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0 70px white, 0 0 80px white;}
+}
+.logo_container h1{
+    color: white;
+    /*height: style="width: 300px;height: 300px";*/
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Century Gothic';
+    font-size: 40px;
+    font-weight: 100;
+}
+.logo_container h1 span{
+    font-size: 40px;
+    font-weight: 800;
+}
+.navigation{
+    float: right;
+    /*height: style="width: 300px;height: 300px";*/
+}
+.navigation li{
+    margin-top: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    /*height: style="width: 300px;height: 300px";*/
+    color: white;
+    float: left;
+    padding: 0px 20px;
+    font-family: 'Century Gothic';
+    font-size: 16px;
+}
+.Banner{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    background-color:white;
+}
+main{
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.Products{
+    color: white;
+    text-align: center;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px; 
+}
+footer{
+    /*width: style="width: 300px;height: 300px";*/
+    height: 80px;
+    display: block;
+    background-color:black;
+}
+.inner_footer{
+    width: 1000px;
+    /*height: style="width: 300px;height: 300px";*/
+    margin: 0 auto;
+    background-color:black;
+}
+.container_footer{
+    /*height: style="width: 300px;height: 300px";*/
+    display: table;
+    float: left;
+}
+.navigation_footer{
+    float: right;
+    /*height: style="width: 300px;height: 300px";*/
+}
+.navigation_footer li{
+    display: table-cell;
+    vertical-align: middle;
+    /*height: style="width: 300px;height: 300px";*/
+    color: white;
+    float: left;
+    padding: 0px 20px;
+    font-family: 'Century Gothic';
+    font-size: 16px;
+}
+
+/*Separate*/
+.topnav {
+  overflow: hidden;
+  background-color: #000;
+  position: relative;
+}
+.topnav #myLinks {
+  display: none;
+}
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.active {
+  background-color: #000;
+  color: white;
+}
+.topnav{display: none;}
+.navigation_footer_mobile{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+  
+  .column {
+    width: 100%;
+    margin-bottom: 200px;
+  }
+
+  /*Mobile view navigation*/
+  .navigation-container{
+    display: none;
+  }
+  .topnav{
+    display: block;
+  }
+  .navigation_footer_mobile{
+    display: block;
+  }
+
+}
+</style>
+<body>
+<!--Mobile View-->
+<!-- Top Navigation Menu -->
+<div class="topnav">
+    <a href="#home" class="active">Glow Station</a>
+    <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">🛒 Cart</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="mobileview()">
+        =
+    </a>
+</div>
+
+<div class="navigation-container">
+    <div class="inner_header">
+        <div class="logo_container">
+            <h1 class = "glow">G͙l͙o͙w͙<span>S͙t͙a͙t͙i͙o͙n͙</span></h1>
+        </div>
+            <ul class="navigation">
+                <li><a href="index.html", style="color: white;">Home</a></li>
+                <li><a href="Products.html", style="color: white;">Products</a></li>
+                <li><a href="About.html", style="color: white;">About</a></li>
+                <li><a href="Contact.html", style="color: white;">Contact</a></li>
+                <li><a href="Cart.html", style="color: white;">🛒</a></li>
+            </ul>
+    </div>
+</div>
+    <h3 class="Banner">Products</h3><br><br>
+<main>
+    <div class="Products">
+        <div class="row"><hr><p style="font-family: Lucida Calligraphy; font-size: large;">Cleansers</p><hr>
+            <div class="column">
+                <li><a href="CleanserPage.html"><img src="Products/Cleanser.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Foaming Cleanser 60ml</p>
+                <p style="color: white;font-size:18px">₱149.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡(374 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="Cleanser1Page.html"><img src="Products/CleanserCollagen.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Collagen Cleanser 100ml</p>
+                <p style="color: white;font-size:18px">₱349.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡(633 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="Cleanser2Page.html"><img src="Products/CleanserGreenTea.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Cleanser 100ml</p>
+                <p style="color: white;font-size:18px">₱349.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(509 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="Cleanser3Page.html"><img src="Products/CleanserMens.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Charcoal Men's Cleanser 60ml</p>
+                <p style="color: white;font-size:18px">₱249.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(110 sold)</p></a></li>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="row"><hr><p style="font-family: Lucida Calligraphy; font-size: large;">Exfoliants</p><hr>
+            <div class="column">
+                <li><a href="ScrubPage.html"><img src="Products/Scrub.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Oatmeal Yogurt Face and Body Scrub 100ml</p>
+                <p style="color: white;font-size:18px">₱299.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡(765 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="Scrub1Page.html"><img src="Products/Scrub2.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Sakura Scented Micro-exfoliant Cream 70ml</p>
+                <p style="color: white;font-size:18px">₱429.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(1051 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="ScrubBodyPage.html"><img src="Products/ScrubBody.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Body Brush Scrub</p>
+                <p style="color: white;font-size:18px">₱449.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(2091 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="ScrubBody1Page.html"><img src="Products/ScrubBody2.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Cococnut Body Scrub 100ml</p>
+                <p style="color: white;font-size:18px">₱749.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(998 sold)</p></a></li>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="row" ><hr><p style="font-family: Lucida Calligraphy; font-size: large;">Toners</p><hr>
+            <div class="column">
+                <li><a href="TonerPage.html"><img src="Products/Toner.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Anti-dust Toner 60ml</p>
+                <p style="color: white;font-size:18px">₱149.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(701 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="Toner1Page.html"><img src="Products/TonerCollagen.jpg" style="width: 300px;height: 300px;">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Hydrating Collagen Toner 60ml</p>
+                <p style="color: white;font-size:18px">₱349.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡(422 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="Toner2Page.html"><img src="Products/TonerGreenTea.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Invigorating Green Tea Toner 60ml</p>
+                <p style="color: white;font-size:18px">₱349.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(760 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="Toner3Page.html"><img src="Products/TonerMens.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Hydrating Men's Toner 60ml</p>
+                <p style="color: white;font-size:18px">₱249.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(201 sold)</p></a></li>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="row"><hr><p style="font-family: Lucida Calligraphy; font-size: large;">Masks</p><hr>
+            <div class="column">
+                <li><a href="MaskPage.html"><img src="Products/Mask.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Sleeping Cream Mask 30ml</p>
+                <p style="color: white;font-size:18px">₱149.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡(822 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="Mask1Page.html"><img src="Products/Mask2.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Cookies and Cream Mask 60ml</p>
+                <p style="color: white;font-size:18px">₱349.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(1011 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="Mask2Page.html"><img src="Products/Mask3.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Revitalizing Gel Mask 60ml</p>
+                <p style="color: white;font-size:18px">₱549.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(1112 sold)</p>
+            </div>
+            <div class="column">
+                <li><a href="Mask3Page.html"><img src="Products/Mask4.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Strawberry Bubble Mask 60ml</p>
+                <p style="color: white;font-size:18px">₱449.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡(310 sold)</p></a></li>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="row"><hr><p style="font-family: Lucida Calligraphy; font-size: large;">Essence and Serums</p><hr>
+            <div class="column">
+                <li><a href="EssencePage.html"><img src="Products/Essence.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Anti-wrinkle Snail Essence 30ml</p>
+                <p style="color: white;font-size:18px">₱449.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(1000 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="Essence1Page.html"><img src="Products/Essence2.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Revitalizing Essence 50ml</p>
+                <p style="color: white;font-size:18px">₱649.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡(672 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="SerumPage.html"><img src="Products/Serum.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Vitamin C Serum 20ml</p>
+                <p style="color: white;font-size:18px">₱349.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(696 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="Serum1Page.html"><img src="Products/SerumMens.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">After-shave Men's Serum 60ml</p>
+                <p style="color: white;font-size:18px">₱249.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(148 sold)</p></a></li>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="row"><hr><p style="font-family: Lucida Calligraphy; font-size: large;">Eye</p><hr>
+            <div class="column">
+                <li><a href="EyeCreamPage.html"><img src="Products/EyeCream.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Cooling Eye Cream 10ml</p>
+                <p style="color: white;font-size:18px">₱149.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡(260 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="EyeCream1Page.html"><img src="Products/EyeCream1.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Cooling Eye Cream 20ml</p>
+                <p style="color: white;font-size:18px">₱249.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡(392 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="EyeCream2Page.html"><img src="Products/EyeCream2.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Wrinkle Repair Eye Cream 30ml</p>
+                <p style="color: white;font-size:18px">₱349.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(892 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="EyeCream3Page.html"><img src="Products/EyeCream3.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Leaf Extract Under Eye Cream 60ml</p>
+                <p style="color: white;font-size:18px">₱469.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(991 sold)</p></a></li>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="row"><hr><p style="font-family: Lucida Calligraphy; font-size: large;">Moisturizers</p><hr>
+            <div class="column">
+                <li><a href="MoisturizerPage.html"><img src="Products/Moisturizer.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Face and Neck Moisturizer 30 ml</p>
+                <p style="color: white;font-size:18px">₱149.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡(340 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="Moisturizer1Page.html"><img src="Products/MoisturizerGreenTea.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Invigorating Green Tea Moisturizer 30ml</p>
+                <p style="color: white;font-size:18px">₱449.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(441 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="Moisturizer2Page.html"><img src="Products/MoisturizerMens.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Charcoal Men's Moisturizer 60ml</p>
+                <p style="color: white;font-size:18px">₱249.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(19 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="Moisturizer3Page.html"><img src="Products/MistCollagen.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Collagen Moisturizing Mist 100ml</p>
+                <p style="color: white;font-size:18px">₱349.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡(539 sold)</p></a></li>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="row">
+            <div class="column">
+                <li><a href="Moisturizer4Page.html"><img src="Products/MistMens.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Charcoal Men's Hydrating Mist 60ml</p>
+                <p style="color: white;font-size:18px">₱149.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(152 sold)</p></a></li>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="row"><hr><p style="font-family: Lucida Calligraphy; font-size: large;">Sun Protection</p><hr>
+            <div class="column">
+                <li><a href="SPFPage.html"><img src="Products/SPF.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Facial Sun Cream 10ml</p>
+                <p style="color: white;font-size:18px">₱249.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(111 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="SPF1Page.html"><img src="Products/SPF2.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Kids Waterproof Sun Block 60ml</p>
+                <p style="color: white;font-size:18px">₱399.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(250 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="SPF2Page.html"><img src="Products/SPF3.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Sun Spray 70ml</p>
+                <p style="color: white;font-size:18px">₱299.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡(321 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="SPF3Page.html"><img src="Products/SPFLotion.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Moisturizing Waterproof Body Lotion 100ml</p>
+                <p style="color: white;font-size:18px">₱549.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(833 sold)</p></a></li>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="row"><hr><p style="font-family: Lucida Calligraphy; font-size: large;">Sets</p><hr>
+            <div class="column">
+                <li><a href="SetPage.html"><img src="Products/Set.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Ocean Serum Set 40ml</p>
+                <p style="color: white;font-size:18px">₱1249.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(431 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="Set1Page.html"><img src="Products/Set1.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Radiance Set 70ml</p>
+                <p style="color: white;font-size:18px">₱1499.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(1250 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="Set2Page.html"><img src="Products/Set2.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Rosehip Set</p>
+                <p style="color: white;font-size:18px">₱899.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(679 sold)</p></a></li>
+            </div>
+            <div class="column">
+                <li><a href="Set3Page.html"><img src="Products/Set3.jpg" style="width: 300px;height: 300px">
+                <p style="color: white;font-size:18px">______________________________</p>
+                <p style="color: white;font-size:18px">Acne Clearing Set</p>
+                <p style="color: white;font-size:18px">₱999.75</p>
+                <p style="color: white;font-size:18px">♡♡♡♡♡(633 sold)</p></a></li>
+            </div>
+        </div>
+    </div>
+</main>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>
+    <div class="inner_footer">
+        <div class="container_footer">
+            <p style="color: white;">©Copyright 2016 GlowStation<br>Designed and Developed by GlowStation</p>
+        </div>
+        <ul class="navigation_footer_mobile">
+            <br><br><br>
+            <li><a href="facebook.com", style="color: white;">Facebook</a></li>
+            <li><a href="instagram.com", style="color: white;">Instagram</a></li>
+            <li><a href="twitter.com", style="color: white;">Twitter</a></li>
+            <li><a href="youtube.com", style="color: white;">Youtube</a></li>
+        </ul>
+
+        <ul class="navigation_footer">
+            <li><a href="facebook.com", style="color: white;">Facebook</a></li>
+            <li><a href="instagram.com", style="color: white;">Instagram</a></li>
+            <li><a href="twitter.com", style="color: white;">Twitter</a></li>
+            <li><a href="youtube.com", style="color: white;">Youtube</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+function mobileview() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</body>
+</html>

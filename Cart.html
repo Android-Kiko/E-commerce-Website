@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("images/ColorfulMarble.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navigation-container{
+    /*width: style="width: 300px;height: 300px";*/
+    height: 80px;
+    display: block;
+    background-color:black;
+}
+.inner_header{
+    width: 1000px;
+    /*height: style="width: 300px;height: 300px";*/
+    display: block;
+    margin: 0 auto;
+    background-color:black;
+}
+.logo_container{
+    /*height: style="width: 300px;height: 300px";*/
+    display: table;
+    float: left;
+    margin-top: 10px;
+}
+.glow{
+    font-size: 80px;
+    color: #fff;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow{
+from {text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0 70px white;}
+to{text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px white, 0 0 60px white, 0 0 70px white, 0 0 80px white;}
+}
+.logo_container h1{
+    color: white;
+    /*height: style="width: 300px;height: 300px";*/
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Century Gothic';
+    font-size: 40px;
+    font-weight: 100;
+}
+.logo_container h1 span{
+    font-size: 40px;
+    font-weight: 800;
+}
+.navigation{
+    float: right;
+    /*height: style="width: 300px;height: 300px";*/
+}
+.navigation li{
+    margin-top: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    /*height: style="width: 300px;height: 300px";*/
+    color: white;
+    float: left;
+    padding: 0px 20px;
+    font-family: 'Century Gothic';
+    font-size: 16px;
+}
+.Banner{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    background-color:white;
+}
+main{
+    margin: 0 auto;
+    padding: 30px 20px;
+    min-height: calc(100vh - 80px - 60px)
+}
+footer{
+    /*width: style="width: 300px;height: 300px";*/
+    height: 80px;
+    display: block;
+    background-color:black;
+}
+.inner_footer{
+    width: 1000px;
+    /*height: style="width: 300px;height: 300px";*/
+    margin: 0 auto;
+    background-color:black;
+}
+.container_footer{
+    /*height: style="width: 300px;height: 300px";*/
+    display: table;
+    float: left;
+}
+.navigation_footer{
+    float: right;
+    /*height: style="width: 300px;height: 300px";*/
+}
+.navigation_footer li{
+    display: table-cell;
+    vertical-align: middle;
+    /*height: style="width: 300px;height: 300px";*/
+    color: white;
+    float: left;
+    padding: 0px 20px;
+    font-family: 'Century Gothic';
+    font-size: 16px;
+}
+
+/*Separate*/
+.topnav {
+  overflow: hidden;
+  background-color: #000;
+  position: relative;
+}
+.topnav #myLinks {
+  display: none;
+}
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.active {
+  background-color: #000;
+  color: white;
+}
+.topnav{display: none;}
+.navigation_footer_mobile{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+  
+  .column {
+    width: 100%;
+    margin-bottom: 200px;
+  }
+
+  /*Mobile view navigation*/
+  .navigation-container{
+    display: none;
+  }
+  .topnav{
+    display: block;
+  }
+  .navigation_footer_mobile{
+    display: block;
+  }
+
+}
+</style>
+<body>
+<!--Mobile View-->
+<!-- Top Navigation Menu -->
+<div class="topnav">
+    <a href="#home" class="active">Glow Station</a>
+    <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">🛒 Cart</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="mobileview()">
+        =
+    </a>
+</div>
+
+<div class="navigation-container">
+    <div class="inner_header">
+        <div class="logo_container">
+            <h1 class = "glow">G͙l͙o͙w͙<span>S͙t͙a͙t͙i͙o͙n͙</span></h1>
+        </div>
+            <ul class="navigation">
+                <li><a href="index.html", style="color: white;">Home</a></li>
+                <li><a href="Products.html", style="color: white;">Products</a></li>
+                <li><a href="About.html", style="color: white;">About</a></li>
+                <li><a href="Contact.html", style="color: white;">Contact</a></li>
+                <li><a href="Cart.html", style="color: white;">🛒</a></li>
+            </ul>
+    </div>
+</div>
+    <h3 class="Banner">Cart</h3><br><br>
+<main>
+<h1 style="text-align: center;">You cannot add to cart at the moment</h1>
+</main>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>
+    <div class="inner_footer">
+        <div class="container_footer">
+            <p style="color: white;">©Copyright 2016 GlowStation<br>Designed and Developed by GlowStation</p>
+        </div>
+        <ul class="navigation_footer_mobile">
+            <br><br><br>
+            <li><a href="facebook.com", style="color: white;">Facebook</a></li>
+            <li><a href="instagram.com", style="color: white;">Instagram</a></li>
+            <li><a href="twitter.com", style="color: white;">Twitter</a></li>
+            <li><a href="youtube.com", style="color: white;">Youtube</a></li>
+        </ul>
+        
+
+        <ul class="navigation_footer">
+            <li><a href="facebook.com", style="color: white;">Facebook</a></li>
+            <li><a href="instagram.com", style="color: white;">Instagram</a></li>
+            <li><a href="twitter.com", style="color: white;">Twitter</a></li>
+            <li><a href="youtube.com", style="color: white;">Youtube</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+function mobileview() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</body>
+</html>
